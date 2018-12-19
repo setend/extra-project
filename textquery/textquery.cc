@@ -3,6 +3,7 @@
 #include <iostream>
 #include <string>
 #include <sstream>
+#include <ctype.h>
 using namespace std;
 
 bool TextQuery::store_file(const string& t)
@@ -28,7 +29,11 @@ void TextQuery::build_map()
 {
         for(int i=0;i<Lines_of_text.size();++i)
         {
-                stringstream ss(Lines_of_text[i]);
+                string str = Lines_of_text[i];
+                for(int k = 0; k < str.size(); ++k)
+                        if(ispunct(str[k]))
+                                str[k] = ' ';
+                stringstream ss(str);
                 string word;
                 while(ss>>word) word_map[word].insert(i);
          }

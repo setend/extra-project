@@ -21,6 +21,7 @@ public:
         }
         set<line_no> run_query(const string&) const;
         string text_line(line_no) const;
+        int size() const{ return Lines_of_text.size();}
 
 private:
 
