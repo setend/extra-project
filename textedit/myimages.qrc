@@ -1,0 +1,25 @@
+<RCC>
+    <qresource prefix="/new/icon">
+        <file alias="1">icon/16020244-61ff9e53da3e9r29711bd4c2b-1.jpg</file>
+        <file alias="2">icon/16020244-61ff9e53da3e92911bd4c2b-1.jpg</file>
+        <file alias="3">icon/16020244-61ff9e53da3e92911bd4cb-1.jpg</file>
+        <file alias="4">icon/16020244-61ff9e53da3e929711bd4c2b-1.jpg</file>
+        <file alias="5">icon/16020244-61ff9e53dad3e9r29711bd4c2b-1.jpg</file>
+        <file alias="6">icon/16020244-61ff9e53dad3e9rc29711bd4c2b-1.jpg</file>
+        <file alias="7">icon/16020244-61ff9e53dad3e9rc29711bd4c72b-1.jpg</file>
+        <file alias="8">icon/16020244-61ff9e53dad3e9rc292711bd4c72b-1.jpg</file>
+        <file alias="9">icon/16020244-61ff59e53dad3e9c2b92711bd4ac72b-1.jpg</file>
+        <file alias="10">icon/16020244-61ff59e53dad3e9c2b92711bd4ac72bb-1.jpg</file>
+        <file alias="11">icon/16020244-61ff59e53dad3e9rc2b92711bd4ac72b-1.jpg</file>
+        <file alias="12">icon/16020244-61ff59e53dad3e9rc2b92711bd4c72b-1.jpg</file>
+        <file alias="13">icon/16020244-61ff59e53dad3e9rc292711bd4c72b-1.jpg</file>
+        <file alias="14">icon/16377226-6ef7aa9044d338.jpg</file>
+        <file alias="15">icon/16377226-6ef7aa9044yd38.jpg</file>
+        <file alias="16">icon/16377226-6ef7aa9044yd338.jpg</file>
+        <file alias="17">icon/16377226-6ef7aa90446d338.jpg</file>
+        <file alias="18">icon/16377226-6ef7aa904846d33f8.jpg</file>
+        <file alias="19">icon/16377226-6ef7aa904846d33f8d.jpg</file>
+        <file>icon/16377226-6ef7aa904846d33f8d89161a2c3ec75f-1.jpg</file>
+        <file>icon/16377226-6ef7aa904846d338.jpg</file>
+    </qresource>
+</RCC>

@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>400</width>
+    <height>300</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralWidget">
+   <layout class="QGridLayout" name="gridLayout_2">
+    <item row="0" column="0">
+     <layout class="QGridLayout" name="gridLayout">
+      <item row="0" column="0">
+       <widget class="QTextEdit" name="textEdit"/>
+      </item>
+     </layout>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menuBar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>400</width>
+     <height>26</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menu_F">
+    <property name="title">
+     <string>文件(&amp;F)</string>
+    </property>
+    <addaction name="actionxi"/>
+    <addaction name="actionopen_O"/>
+    <addaction name="actionclose_c"/>
+    <addaction name="separator"/>
+    <addaction name="actionstore_S"/>
+    <addaction name="actionanother_store_A"/>
+    <addaction name="separator"/>
+    <addaction name="actionquit_Q"/>
+   </widget>
+   <widget class="QMenu" name="menu">
+    <property name="title">
+     <string>&amp;编辑(&amp;E)</string>
+    </property>
+    <addaction name="actiond"/>
+    <addaction name="separator"/>
+    <addaction name="actiond_2"/>
+    <addaction name="actionf"/>
+    <addaction name="actionf_2"/>
+    <addaction name="separator"/>
+    <addaction name="actionc"/>
+   </widget>
+   <widget class="QMenu" name="menu_H">
+    <property name="title">
+     <string>&amp;帮助(&amp;H)</string>
+    </property>
+    <addaction name="actionu"/>
+   </widget>
+   <addaction name="menu_F"/>
+   <addaction name="menu"/>
+   <addaction name="menu_H"/>
+  </widget>
+  <widget class="QToolBar" name="mainToolBar">
+   <attribute name="toolBarArea">
+    <enum>TopToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+  </widget>
+  <widget class="QStatusBar" name="statusBar"/>
+  <action name="actionxi">
+   <property name="text">
+    <string>新建(&amp;N)</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+N</string>
+   </property>
+  </action>
+  <action name="actionopen_O">
+   <property name="icon">
+    <iconset resource="myimages.qrc">
+     <normaloff>:/new/icon/10</normaloff>:/new/icon/10</iconset>
+   </property>
+   <property name="text">
+    <string>open(&amp;O)</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+O</string>
+   </property>
+  </action>
+  <action name="actionclose_c">
+   <property name="icon">
+    <iconset resource="myimages.qrc">
+     <normaloff>:/new/icon/17</normaloff>:/new/icon/17</iconset>
+   </property>
+   <property name="text">
+    <string>close(&amp;c)</string>
+   </property>
+   <property name="toolTip">
+    <string>close(c)</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+C</string>
+   </property>
+  </action>
+  <action name="actionstore_S">
+   <property name="icon">
+    <iconset resource="myimages.qrc">
+     <normaloff>:/new/icon/9</normaloff>:/new/icon/9</iconset>
+   </property>
+   <property name="text">
+    <string>store(&amp;S)</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+S</string>
+   </property>
+  </action>
+  <action name="actionanother_store_A">
+   <property name="icon">
+    <iconset resource="myimages.qrc">
+     <normaloff>:/new/icon/6</normaloff>:/new/icon/6</iconset>
+   </property>
+   <property name="text">
+    <string>another store(&amp;A)</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+A</string>
+   </property>
+  </action>
+  <action name="actionquit_Q">
+   <property name="icon">
+    <iconset resource="myimages.qrc">
+     <normaloff>:/new/icon/7</normaloff>:/new/icon/7</iconset>
+   </property>
+   <property name="text">
+    <string>quit(&amp;Q)</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+Q</string>
+   </property>
+  </action>
+  <action name="actiond">
+   <property name="icon">
+    <iconset resource="myimages.qrc">
+     <normaloff>:/new/icon/18</normaloff>:/new/icon/18</iconset>
+   </property>
+   <property name="text">
+    <string>撤销(&amp;Z)</string>
+   </property>
+   <property name="toolTip">
+    <string>撤销(Z)</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+Z</string>
+   </property>
+  </action>
+  <action name="actionu">
+   <property name="icon">
+    <iconset resource="myimages.qrc">
+     <normaloff>:/new/icon/8</normaloff>:/new/icon/8</iconset>
+   </property>
+   <property name="text">
+    <string>版本说明</string>
+   </property>
+  </action>
+  <action name="actiond_2">
+   <property name="icon">
+    <iconset resource="myimages.qrc">
+     <normaloff>:/new/icon/icon/16377226-6ef7aa904846d338.jpg</normaloff>:/new/icon/icon/16377226-6ef7aa904846d338.jpg</iconset>
+   </property>
+   <property name="text">
+    <string>剪切(&amp;X)</string>
+   </property>
+   <property name="toolTip">
+    <string>剪切(X)</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+X</string>
+   </property>
+  </action>
+  <action name="actionf">
+   <property name="icon">
+    <iconset resource="myimages.qrc">
+     <normaloff>:/new/icon/13</normaloff>:/new/icon/13</iconset>
+   </property>
+   <property name="text">
+    <string>复制(&amp;C)</string>
+   </property>
+   <property name="toolTip">
+    <string>复制(C)</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+C</string>
+   </property>
+  </action>
+  <action name="actionf_2">
+   <property name="icon">
+    <iconset resource="myimages.qrc">
+     <normaloff>:/new/icon/11</normaloff>:/new/icon/11</iconset>
+   </property>
+   <property name="text">
+    <string>粘贴(&amp;V)</string>
+   </property>
+   <property name="toolTip">
+    <string>粘贴(V)</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+V</string>
+   </property>
+  </action>
+  <action name="actionc">
+   <property name="icon">
+    <iconset resource="myimages.qrc">
+     <normaloff>:/new/icon/4</normaloff>:/new/icon/4</iconset>
+   </property>
+   <property name="text">
+    <string>&amp;查找(&amp;F)</string>
+   </property>
+   <property name="toolTip">
+    <string>查找(F)</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+F</string>
+   </property>
+  </action>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources>
+  <include location="myimages.qrc"/>
+ </resources>
+ <connections/>
+</ui>
