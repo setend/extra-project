@@ -1,0 +1,1 @@
+/usr/bin/c++      CMakeFiles/2048.dir/src/game.cpp.o CMakeFiles/2048.dir/src/scores.cpp.o CMakeFiles/2048.dir/src/statistics.cpp.o CMakeFiles/2048.dir/src/2048.cpp.o CMakeFiles/2048.dir/src/global.cpp.o CMakeFiles/2048.dir/src/menu.cpp.o  -o 2048 

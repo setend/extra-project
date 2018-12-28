@@ -1,0 +1,3 @@
+/home/set/mylab/2048/CMakeFiles/edit_cache.dir
+/home/set/mylab/2048/CMakeFiles/rebuild_cache.dir
+/home/set/mylab/2048/CMakeFiles/2048.dir
