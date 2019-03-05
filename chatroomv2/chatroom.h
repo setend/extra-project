@@ -17,6 +17,7 @@ public:
  
   iterator getone(int ID);
   bool delone(int ID);
+  void changeOwner(int ID);
   
   
 private:

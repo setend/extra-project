@@ -29,3 +29,16 @@ bool Chatroom::delone(int ID)
   return false;
 }
 
+void Chatroom::changeOwner(int ID)
+{
+
+    for(auto it = members.begin(); it != members.end();++it)
+    {
+        if(it->getID() == ID)
+        {
+            room_owner_id = ID;
+            return;
+        }
+    }
+}
+
