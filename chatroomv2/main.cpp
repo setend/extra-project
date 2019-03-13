@@ -31,18 +31,18 @@ using namespace std;
 
 const int PORT = 8999;
 Chatroom chatroom;
-Msgque msg_rcv_que;
-Msgque msg_snd_que;
-int myRead(int fd,char *buf,int n);
-int myWrite(int fd, char *buf, int n);
-Msg msgJsonParse(char *);
-void msgJsonPack(char *,const Msg& m);
-int make_tcp_socket();  
-void* login_handler(int sockfd); 
-int make_udp_socket();
-void* rcv_msg_handler(int sockfd);
-void* mid_deal_handler();
-void* snd_msg_handler(int sockfd);
+Msgque msg_rcv_que;   // message recieve queue
+Msgque msg_snd_que;     // message send queue
+int myRead(int fd,char *buf,int n);   // read from socket
+int myWrite(int fd, char *buf, int n); // write to socket
+Msg msgJsonParse(char *);   // parse json to msg format
+void msgJsonPack(char *,const Msg& m); // pack msg to json format
+int make_tcp_socket();    // as its name
+void* login_handler(int sockfd);  // deal with user login
+int make_udp_socket();           //  make udp socket
+void* rcv_msg_handler(int sockfd);  // deal with received message
+void* mid_deal_handler();           // classify the message and add different queuq
+void* snd_msg_handler(int sockfd); // deal with message need to send 
 
 int main(int argc, char **argv) {
     int tcp_sockfd = make_tcp_socket();
@@ -175,6 +175,7 @@ int make_udp_socket()
   sockaddr_in host;
   int sockfd = socket(PF_INET,SOCK_DGRAM,0);
   if( sockfd == -1) return -1;
+  
   host.sin_family = AF_INET;
   host.sin_port = htons(PORT);
   host.sin_addr.s_addr = htonl(INADDR_ANY);
