@@ -18,7 +18,8 @@ void MyThread::run()
   {
 	cv.wait(lck,[this](){return _hastask;});
 	_task->taskproc();
-	std::cout << "task : "<< _task->getId() << " has finished " << std::endl;
+	std::string temp_str= std::string("task : " )+std::to_string(_task->getId()) + "has finished\n";
+	std::cout << temp_str;
 	delete _task;
 	_task = NULL;
 	_hastask = next_task();

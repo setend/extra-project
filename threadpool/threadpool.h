@@ -9,16 +9,19 @@
 #include <vector>
 #include <iostream>
 #include <utility>
+#include <string>
 
 class ThreadPool;
 
 class Task_base{
 public:
-  Task_base(int id):_id(id){}
+  Task_base(int id,int level=0):_id(id),_level(level){}
   int getId() const { return _id;}
+  int getLevel() const { return _level;}
   virtual void taskproc() = 0;
 private:
   int _id;
+  int _level;
 }; //Task_base
 
 class MyThread{
